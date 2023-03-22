@@ -35,6 +35,7 @@ module Webcrawler
     config.generators.system_tests = nil
 
     config.generators do |g|
+      g.orm :mongoid
       g.test_framework :rspec, fixture_replacement: :factory_bot
     end
   end
